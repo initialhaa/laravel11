@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Index;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+/**
+ * @OA\Info(title="My First API", version="0.1")
+ */
 
 class IndexController extends Controller
 {
