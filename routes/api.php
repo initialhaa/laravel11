@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\IndexController;
+use App\Models\Index;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use OpenApi\Annotations as OA;
@@ -19,3 +21,5 @@ return [
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
+
+Route::get('/', [IndexController::class, 'index']);
